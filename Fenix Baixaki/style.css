@@ -1,0 +1,190 @@
+body {
+  font-family: arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.comprar_servico {
+  color: white;
+  padding: 10px 20px;
+  background-color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.car {
+  position: fixed;
+  bottom: 40px; /* Distância do fundo */
+  right: 40px;  /* Distância da direita */
+  z-index: 1000; /* Garante que fique acima de tudo */
+  width: 30px;
+  height: 30px;      /* Largura e altura IGUAIS */
+  border-radius: 60%; /* O segredo para arredondar */
+}
+
+.menu {
+  text-align: center;
+  background-color:  #621313;
+  padding: 10px;
+  border: 6px solid #8d1d38;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  font-size: 35px;
+  position: relative;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* espaço entre ícone e texto */
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+.menu li a:hover {
+  background-color: #8d1d38;
+}
+
+.menu li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #8d1d38;
+  list-style: none;
+  min-width: 150px;
+}
+
+.menu li:hover ul {
+  display: block;
+}
+
+.menu li ul li {
+  display: block;
+  font-size: 15px;
+  border-bottom: 1px solid #8d1d38;
+}
+
+.menu li ul li {
+  border-bottom: none;
+}
+
+.conteudo {
+  min-height: 100vh;
+  display: flex;
+}
+
+.categorias {
+  width: 200px;
+  background-color: #621313;
+  padding: 10px;
+  border: 7px solid #8d1d38;
+}
+
+.categorias ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categorias ul li {
+  border-bottom: 1px solid #8d1d38;
+}
+
+.menu ul li {
+  border-bottom: 1px solid #8d1d38;
+}
+
+.categorias li {
+  position: relative;
+  font-size: 20px;
+}
+
+.categorias a {
+  display: flex;
+  flex-direction: row;   /* ícone à esquerda */
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+}
+
+.categorias a:hover {
+  background-color: #8d1d38;
+}
+
+.categorias ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  background-color: #8d1d38;
+  min-width: 180px;
+}
+
+.categorias li:hover > ul {
+  display: block;
+}
+
+.categorias ul ul li {
+  border-bottom: 1px solid #8d1d38;
+}
+
+.categorias ul ul li {
+  border-bottom: none;
+}
+
+section {
+  text-align: center;
+  background-color: #d26731;
+  display: grid;
+  flex: 1;
+}
+
+.loja {
+  padding: 10px;
+  padding-bottom: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.comprar {
+  padding: 10px;
+}
+
+.comprar_servico:hover {
+  background-color: #8d1d38;
+}
+
+.borda {
+  border: 5px solid #8d1d38;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
