@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário de Cadastro com table</title>
+  </head>
+  <body>
+    <h2>Formulário de Cadastro</h2>
+    <form action="">
+      <table>
+        <tr>
+          <td>Nome:</td>
+          <td><input type="text" name="Nome" id="Nome" required /></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="Email" id="Email" required/></td>
+        </tr>
+        <tr>
+          <td>Telefone:</td>
+          <td><input type="tel" name="telefone" id="Telefone" required/></td>
+        </tr>
+        <tr>
+          <td>Sexo:</td>
+          <td>
+            <input type="radio" name="sexo" id="masc" value="masculino" required />Masculino
+            <input type="radio" name="sexo" id="fem" value="feminino" required/>Feminino
+          </td>
+        </tr>
+        <tr>
+          <td>Mensagem:</td>
+          <td>
+            <textarea name="mens" id="mensagem" rows="4" cols="21" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="botao">
+            <input id="enviar" type="submit" value="Enviar">
+            <input id="limpar" type="reset" value="Limpar">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
